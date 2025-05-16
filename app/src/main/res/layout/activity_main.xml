@@ -1,3 +1,32 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="16dp">
-    <TextView android:id="@+id/textView" android:text="Cắm sạc hoặc rút sạc để kiểm tra Toast" android:textSize="18sp" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Switch
+        android:id="@+id/sw_auto_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto Response" />
+
+    <ListView
+        android:id="@+id/lv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_response_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I am fine and safe. Worry not!"/>
+
+    <Button
+        android:id="@+id/btn_response_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tell my mother I love her"/>
+
 </LinearLayout>
