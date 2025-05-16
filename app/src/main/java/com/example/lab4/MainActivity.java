@@ -168,17 +168,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         isRunning = true;
-
-        if (broadcastReceiver != null) {
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
-                registerReceiver(broadcastReceiver,
-                        new IntentFilter(SmsReceiver.SMS_FORWARD_BROADCAST_RECEIVER),
-                        Context.RECEIVER_NOT_EXPORTED); // <--- thêm dòng này
-            } else {
-                registerReceiver(broadcastReceiver,
-                        new IntentFilter(SmsReceiver.SMS_FORWARD_BROADCAST_RECEIVER));
-            }
-        }
+        registerReceiver(broadcastReceiver, new IntentFilter(SmsReceiver.SMS_FORWARD_BROADCAST_RECEIVER));
     }
 
 
