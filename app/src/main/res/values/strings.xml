@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Lab4</string>
+    <string name="app_name">SMSReceiverApp</string>
+    <string name="no_messages_yet">No messages yet.</string>
+    <string name="you_have_a_new_message">You have a new message!</string>
 </resources>
